@@ -19,7 +19,7 @@
     }
   ],
   "paths": {
-    "/plants": {
+    "/academies": {
       "getall": {
         "description": "Returns all academie from the system that the user has access to",
         "parameters": [
@@ -106,7 +106,7 @@
         }
       }
     },
-    "/plants/{id}": {
+    "/academies/{id}": {
       "get": {
         "description": "get a single plant based on the ID supplied",
         "parameters": [
