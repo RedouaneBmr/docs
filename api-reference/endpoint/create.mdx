@@ -1,4 +1,51 @@
 ---
-title: 'Create Plant'
-openapi: 'POST /plants'
+title: "Create Plant"
+openapi: "POST /plants"
 ---
+# Create a New Academy
+
+Creates a new academy in the system.
+
+## 🛠️ Endpoint
+
+
+## 🔐 Authentication
+
+✅ Required (e.g., Bearer token)
+
+## 📥 Request Body
+
+Send a JSON object with the following fields:
+
+| Field      | Type   | Required | Description              |
+|------------|--------|----------|--------------------------|
+| name       | string | ✅ Yes    | Name of the academy      |
+| location   | string | ✅ Yes    | City where it is located |
+| phone      | string | ✅ Yes    | Contact phone number     |
+
+### 🔽 Example Request Body
+
+```json
+{
+  "name": "Tech Genius Academy",
+  "location": "Constantine",
+  "phone": "+213550123456"
+}
+POST /academy HTTP/1.1
+Host: api.example.com
+Content-Type: application/json
+Authorization: Bearer your_token_here
+
+{
+  "name": "Tech Genius Academy",
+  "location": "Constantine",
+  "phone": "+213550123456"
+}
+
+{
+  "id": 3,
+  "name": "Tech Genius Academy",
+  "location": "Constantine",
+  "phone": "+213550123456",
+  "createdAt": "2025-05-09T18:22:00.000Z"
+}
