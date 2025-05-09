@@ -20,7 +20,7 @@
   ],
   "paths": {
     "/academies": {
-      "getall": {
+      "": {
         "description": "Returns all academie from the system that the user has access to",
         "parameters": [
           {
@@ -59,7 +59,7 @@
           }
         }
       },
-      "createacademy": {
+      "create": {
         "description": "Creates a new academy in the Platform",
         "requestBody": {
           "description": "Academy to create to the platform",
