@@ -20,8 +20,8 @@
   ],
   "paths": {
     "/plants": {
-      "get": {
-        "description": "Returns all plants from the system that the user has access to",
+      "getall": {
+        "description": "Returns all academie from the system that the user has access to",
         "parameters": [
           {
             "name": "limit",
@@ -35,7 +35,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Plant response",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -47,8 +47,8 @@
               }
             }
           },
-          "400": {
-            "description": "Unexpected error",
+          "500": {
+            "description": "Internal Server Error",
             "content": {
               "application/json": {
                 "schema": {
@@ -59,10 +59,10 @@
           }
         }
       },
-      "post": {
-        "description": "Creates a new plant in the store",
+      "createacademy": {
+        "description": "Creates a new academy in the Platform",
         "requestBody": {
-          "description": "Plant to add to the store",
+          "description": "Academy to create to the platform",
           "content": {
             "application/json": {
               "schema": {
@@ -73,8 +73,8 @@
           "required": true
         },
         "responses": {
-          "200": {
-            "description": "plant response",
+          "201": {
+            "description": "Created",
             "content": {
               "application/json": {
                 "schema": {
@@ -84,7 +84,17 @@
             }
           },
           "400": {
-            "description": "unexpected error",
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Bad Request (validation)",
             "content": {
               "application/json": {
                 "schema": {
@@ -97,27 +107,25 @@
       }
     },
     "/plants/{id}": {
-      "delete": {
-        "description": "Deletes a single plant based on the ID supplied",
+      "get": {
+        "description": "get a single plant based on the ID supplied",
         "parameters": [
           {
-            "name": "id",
-            "in": "path",
-            "description": "ID of plant to delete",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
+            "id": "id",
             }
           }
         ],
         "responses": {
-          "204": {
-            "description": "Plant deleted",
+          "200": {
+            "description": "Ok",
             "content": {}
           },
-          "400": {
-            "description": "unexpected error",
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
             "content": {
               "application/json": {
                 "schema": {
