@@ -20,7 +20,7 @@
   ],
   "paths": {
     "/academies": {
-      "": {
+      "get": {
         "description": "Returns all academie from the system that the user has access to",
         "parameters": [
           {
