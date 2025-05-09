@@ -1,4 +1,29 @@
 ---
-title: "Delete Plant"
-openapi: "DELETE /plants/{id}"
+title: "Get academies"
+openapi: "GET /academies"
 ---
+
+# Get All Academies
+
+Returns a list of all academies in the system.
+
+
+## 🔐 Authentication
+
+❌ Not required
+
+## 📥 Request Parameters
+
+None
+
+## 📤 Example Response
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Elite Academy",
+    "location": "Algiers",
+    "phone": "+213661234567"
+  }
+]

@@ -1,4 +1,34 @@
 ---
-title: "Get Plants"
-openapi: "GET /plants"
+title: "Get Academie"
+openapi: "GET /academies/{id}"
 ---
+
+# Get Academy by ID
+
+Returns a specific academy by its ID.
+
+
+## 🔐 Authentication
+
+❌ Not required
+
+## 📥 Request Parameters
+
+| Param | Type    | Required | Description           |
+|-------|---------|----------|-----------------------|
+| id    | integer | ✅ Yes   | The ID of the academy |
+
+## 📤 Example Request
+
+```http
+GET /academy/1 HTTP/1.1
+
+## 📤 Example Response
+
+{
+  "id": 1,
+  "name": "Elite Academy",
+  "location": "Algiers",
+  "phone": "+213661234567"
+}
+
