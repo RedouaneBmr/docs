@@ -1,0 +1,44 @@
+---
+title: 'Get teachers'
+description: 'GET /Teachers'
+---
+
+Returns a list of all teachers in the system.
+
+## 🛠️ Endpoint
+
+GET /teacher/all
+
+## 🔐 Authentication
+
+❌ Not required
+
+## 📥 Request Parameters
+
+None
+
+## 📤 Example Response
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Mr. Ahmed B.",
+    "subject": "Mathematics",
+    "email": "ahmed.b@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Ms. Laila K.",
+    "subject": "Physics",
+    "email": "laila.k@example.com"
+  }
+]
+
+```
+## ✅ Status Codes
+
+| code | meaning               |
+| ---- | --------------------- |
+| 200  | ok                    |
+| 500  | internal server error |
