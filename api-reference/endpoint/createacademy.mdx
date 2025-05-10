@@ -2,12 +2,12 @@
 title: "Create academy"
 openapi: "POST /Academies/Create"
 ---
+
 # Create a New Academy
 
 Creates a new academy in the system.
 
 ## 🛠️ Endpoint
-
 
 ## 🔐 Authentication
 
@@ -17,11 +17,11 @@ Creates a new academy in the system.
 
 Send a JSON object with the following fields:
 
-| Field      | Type   | Required | Description              |
-|------------|--------|----------|--------------------------|
-| name       | string | ✅ Yes    | Name of the academy      |
-| location   | string | ✅ Yes    | City where it is located |
-| phone      | string | ✅ Yes    | Contact phone number     |
+| Field    | Type   | Required | Description              |
+| -------- | ------ | -------- | ------------------------ |
+| name     | string | ✅ Yes    | Name of the academy      |
+| location | string | ✅ Yes    | City where it is located |
+| phone    | string | ✅ Yes    | Contact phone number     |
 
 ### 🔽 Example Request Body
 
@@ -48,3 +48,12 @@ Content-Type: application/json
   "phone": "+213550123456",
   "createdAt": "2025-05-09T18:22:00.000Z"
 }
+
+## ✅ Status Codes
+
+| code | meaning               |
+| ---- | --------------------- |
+| 201  | created               |
+| 400  | Bad Request (validation)|
+| 500  | internal server error |
+
