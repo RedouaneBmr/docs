@@ -49,7 +49,7 @@
         "tab": "teacher",
         "groups": [
           {
-            "group": "teacher",
+            "group": "Endpoints",
             "pages": [
               "api-reference/teacher/getall",
               "api-reference/teacher/get"
