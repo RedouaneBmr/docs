@@ -45,8 +45,8 @@
               "api-reference/endpoint/get"
             ]
           }
-        ],
-        "tab": "teacher",
+        ]},
+        {"tab": "teacher",
         "groups": [
           {
             "group": "Endpoints",
