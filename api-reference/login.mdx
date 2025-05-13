@@ -1,0 +1,45 @@
+---
+title: 'Login'
+description: 'Post /auth/login'
+---
+
+Authenticates a user and returns a JWT token.
+
+## 🛠️ Endpoint
+
+POST /auth/login
+
+
+## 🔐 Authentication
+
+❌ Not required
+
+## 📥 Request Body
+
+| Field    | Type   | Required | Description           |
+|----------|--------|----------|-----------------------|
+| email    | string | ✅ Yes   | User's email address  |
+| password | string | ✅ Yes   | User's password       |
+
+## 📤 Example Request Body
+
+```json
+{
+  "email": "existinguser@example.com",
+  "password": "securePassword123"
+}
+```
+
+## 📦 Example Response
+```json
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6..."
+}
+```
+## ✅ Status Codes
+
+| code | meaning               |
+| ---- | --------------------- |
+| 201  | ok-ligon successfuly            |
+| 401  | Unauthorized (wrong creds)|
+| 500  | internal server error |

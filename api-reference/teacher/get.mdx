@@ -1,6 +1,40 @@
 ---
-title: 'Get teacher'
+title: 'Get teacher by ID'
 description: 'GET /Teacher/{id}'
 ---
 
+Returns a specific teacher by their ID.
 
+## 🛠️ Endpoint
+
+GET /Teacher/{id}
+
+## 🔐 Authentication
+
+❌ Not required
+
+## 📥 Request Parameters
+
+| Param | Type    | Required | Description            |
+|-------|---------|----------|------------------------|
+| id    | integer | ✅ Yes   | ID of the teacher      |
+
+## 📤 Example Request
+
+```http
+GET /teacher/1 HTTP/1.1
+
+{
+  "id": 1,
+  "name": "Mr. Ahmed B.",
+  "subject": "Mathematics",
+  "email": "ahmed.b@example.com"
+}
+```
+## ✅ Status Codes
+
+| code | meaning               |
+| ---- | --------------------- |
+| 200  | ok                    |
+| 404  | Not found             |
+| 500  | internal server error |
