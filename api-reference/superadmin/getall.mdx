@@ -1,0 +1,47 @@
+---
+title: 'Get All Super Admins'
+description: 'GET /super-admin/all'
+---
+
+Returns a list of all super admin accounts in the system.
+
+## 🛠️ Endpoint
+
+GET /super-admin/all
+
+
+## 🔐 Authentication
+
+✅ **Required**  
+Send a Bearer Token in the `Authorization` header.
+
+### 🔑 Example Header
+
+```http
+Authorization: Bearer your.jwt.token.here
+```
+
+## 📤 Example Response
+
+[
+  {
+    "id": 1,
+    "email": "admin1@example.com",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 2,
+    "email": "admin2@example.com",
+    "role": "SUPER_ADMIN"
+  }
+]
+
+## ✅ Status Codes
+
+| code | meaning               |
+| ---- | --------------------- |
+| 200  | ok                    |
+| 401  | Unauthorized                  |
+| 403  | Forbidden (not have permission)                   |
+| 500  | internal server error |
+

@@ -58,13 +58,25 @@
         ]
       },
       {
-        "tab": "User",
+        "tab": "Account",
         "groups": [
           {
             "group": "Endpoints",
             "pages": [
               "api-reference/login",
               "api-reference/signup"
+            ]
+          }
+        ]}
+      ,
+      {
+        "tab": "SuperAdmin",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api-reference/superadmin/creatsuperadmin",
+              "api-reference/superadmin/getall"
             ]
           }
         ]}

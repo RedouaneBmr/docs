@@ -1,0 +1,44 @@
+---
+title: 'Create Super Admin'
+description: 'POST /auth/createSuperAdmin'
+---
+
+Creates a new super admin account.
+
+## 🛠️ Endpoint
+
+POST /auth/createSuperAdmin
+
+## 🔐 Authentication
+
+✅ Required (e.g., Bearer token)
+
+## 📥 Request Body
+
+| Field    | Type   | Required | Description           |
+|----------|--------|----------|-----------------------|
+| email    | string | ✅ Yes   | Admin's email address |
+| password | string | ✅ Yes   | Admin's password      |
+
+## 📤 Example Request Body
+
+```json
+{
+  "email": "admin@example.com",
+  "password": "superSecurePassword"
+}
+```
+## 📦 Example Response
+```json
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6..."
+}
+```
+## ✅ Status Codes
+
+| code | meaning               |
+| ---- | --------------------- |
+| 201  | super admin created               |
+| 400  | Bad Request |
+| 409  | Super admin already exist|
+| 500  | internal server error |
