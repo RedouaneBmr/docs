@@ -56,7 +56,18 @@
             ]
           }
         ]
-      }
+      },
+      {
+        "tab": "User",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api-reference/login",
+              "api-reference/signup"
+            ]
+          }
+        ]}
     ],
     "global": {
       "anchors": [
