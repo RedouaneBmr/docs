@@ -75,7 +75,7 @@
           {
             "group": "Endpoints",
             "pages": [
-              "api-reference/superadmin/creatsuperadmin",
+              "api-reference/superadmin/createsuperadmin",
               "api-reference/superadmin/getall"
             ]
           }
